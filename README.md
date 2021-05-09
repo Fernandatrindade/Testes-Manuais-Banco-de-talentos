@@ -1,71 +1,62 @@
 # Bugs Encontrados
 
 
-# [Bug 01] - Quando está na tela de cadastro do currículo e clica no botão  Cadastre - se em nosso banco de talentos e apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
+### [Bug 01] - Quando está na tela de cadastro do currículo e clica no botão  Cadastre - se em nosso banco de talentos e apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
 
-# Funcionalidade: 
+#### Funcionalidade: 
 Cadastre - se em nosso banco de talentos
-# Cenário: 
-Um novo usuário irá cadastrar seu currículo na base de talentos
+#### Cenário: 
 
-Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+1. Um novo usuário irá cadastrar seu currículo na base de talentos
+2. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+3. E clicar no botão Cadastre - se em nosso banco de talentos
+4. Então o sistema apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
 
-E clicar no botão Cadastre - se em nosso banco de talentos
-
-Então o sistema apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
-
-# Resultado Atual:  
+#### Resultado Atual:  
 Quando está na tela de cadastro do currículo e clica no botão  Cadastre - se em nosso banco de talentos e apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”, conforme a evidência em anexo.
 
-# Resultado Esperado: 
+![Bug1](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%201%5D.png)
+
+#### Resultado Esperado: 
 O botão Cadastre - se em nosso banco de talentos ser removido ou escondido da tela de cadastro do currículo para o usuário não clicar no mesmo. 
 
-# [BUG 02] -  Ao selecionar um País  X e clicar novamente para selecionar outro país, o  sistema não mostra os demais países para serem selecionados e apresenta somente o último país que foi selecionado caso não tenha selecionado nenhum apresenta o primeiro cadastrado.
+### [BUG 02] -  Ao selecionar um País  X e clicar novamente para selecionar outro país, o  sistema não mostra os demais países para serem selecionados e apresenta somente o último país que foi selecionado caso não tenha selecionado nenhum apresenta o primeiro cadastrado.
 
-# Funcionalidade: 
+#### Funcionalidade: 
 Cadastrar Currículo
-# Cenário: 
+#### Cenário: 
 Cadastrar um novo/editar currículo 
 
-# Pré condições: 
-Ter logado no sistema
+#### Pré condições: 
+1. Ter logado no sistema
+#### BDD
+1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+2. Quando preencher o telefone 
+3. E selecionar Sim no radio button caso o número do telefone for o mesmo do WhatsApp 
+4. Quando o número do telefone for diferente do WhatsApp selecionar  Não no radio button
+5. E  preencher o numero do WhatsApp
+6. E  preencher o Email
+7. E preencher o Email novamente
+8. E preencher o Nome completo
+9. E selecionar o Gênero
+10. E preencher o Nascimento
+11. E selecionar o Status civil
+12. E selecionar a Senioridade
+13. E preencher a Pretensão salarial
+14. E scroller a página até o Endereço
+15. E selecionar/preencher o País
+16. E clicar em no País para selecionar 
+17. Então o sistema traz só um países
 
-Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
-
-Quando preencher o telefone 
-
-E selecionar Sim no radio button caso o número do telefone for o mesmo do WhatsApp 
-
-Quando o número do telefone for diferente do WhatsApp selecionar  Não no radio button
-
-E  preencher o numero do WhatsApp
-
-E  preencher o Email
-
-E preencher o Email novamente
-
-E preencher o Nome completo
-
-E selecionar o Gênero
-
-E preencher o Nascimento
-E selecionar o Status civil
-E selecionar a Senioridade
-E preencher a Pretensão salarial
-E scroller a página até o Endereço
-E selecionar/preencher o País
-E clicar em no País para selecionar 
-Então o sistema traz só um países
-
-# Resultado Atual: Ao selecionar um País  X e clicar novamente para selecionar outro país, o  sistema não mostra os demais países para serem selecionados e apresenta somente o último país que foi selecionado caso não tenha selecionado nenhum apresenta o primeiro cadastrado.
+#### Resultado Atual: Ao selecionar um País  X e clicar novamente para selecionar outro país, o  sistema não mostra os demais países para serem selecionados e apresenta somente o último país que foi selecionado caso não tenha selecionado nenhum apresenta o primeiro cadastrado.
   
 Obs: Esse comportamento está acontecendo nas telas de Idioma e Habilidade.
 
 
-# Resultado Esperado: O sistema apresentar todos os pais para selecionar
+### Resultado Esperado: O sistema apresentar todos os pais para selecionar
  
 
-# [BUG 03] - [Usabilidade] -  Falta a Label informar Nível de escolaridade
+## [BUG 03] - [Usabilidade] -  Falta a Label informar Nível de escolaridade
 
 # Funcionalidade: Cadastrar Formação
 # Cenário: Adicionar uma ou mais formações
