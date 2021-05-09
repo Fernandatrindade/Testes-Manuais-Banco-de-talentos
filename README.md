@@ -1,4 +1,4 @@
-# Bugs Encontrados
+## Bugs Encontrados
 
 
 ### [Bug 01] - Quando está na tela de cadastro do currículo e clica no botão  Cadastre - se em nosso banco de talentos e apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
@@ -6,7 +6,9 @@
 #### Funcionalidade: 
 Cadastre - se em nosso banco de talentos
 #### Cenário: 
+Cadastre-se em nosso banco de talentos
 
+#### BDD
 1. Um novo usuário irá cadastrar seu currículo na base de talentos
 2. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 3. E clicar no botão Cadastre - se em nosso banco de talentos
@@ -29,6 +31,7 @@ Cadastrar um novo/editar currículo
 
 #### Pré condições: 
 1. Ter logado no sistema
+
 #### BDD
 1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 2. Quando preencher o telefone 
@@ -54,20 +57,21 @@ Ao selecionar um País  X e clicar novamente para selecionar outro país, o  sis
 ##### Obs: Esse comportamento está acontecendo nas telas de Idioma e Habilidade.
 
 ![Bug2](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%202%5D.png)
-### Resultado Esperado: O sistema apresentar todos os pais para selecionar
+#### Resultado Esperado: 
+O sistema apresentar todos os pais para selecionar
  
 
 ### [BUG 03] - [Usabilidade] -  Falta a Label informar Nível de escolaridade
 
-# Funcionalidade:
+#### Funcionalidade:
 Cadastrar Formação
-# Cenário: 
+#### Cenário: 
 Adicionar uma ou mais formações
-# Pré condições: 
+#### Pré condições: 
 1. Ter logado no sistema
 2. Ter executado o Caso de Teste 3 (CT03)
 
-###### BDD
+#### BDD
 1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 2. Quando scroller na página curriculum para acessar o campo de Formação 
 3. E preencher  o Curso 
@@ -78,6 +82,7 @@ Adicionar uma ou mais formações
 #### Resultado Atual:  
 Falta a Label Informar Nível de escolaridade
 ![Bug 3](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%2003%5D.png)
+
 #### Resultado Esperado: 
 Ter uma Label informando qual o Nível de escolaridade para o usuário selecionar
 
@@ -87,7 +92,7 @@ Ter uma Label informando qual o Nível de escolaridade para o usuário seleciona
 #### Funcionalidade: Cadastrar Formação
 #### Cenário: Cadastrar Formação
 
-###### BDD
+#### BDD
 1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 2. Quando scroller na página curriculum para acessar o campo de Formação 
 3. E preencher  o Curso 
@@ -110,41 +115,44 @@ Ao selecionar estou cursando no momento, apresentar uma frase usual para o usuá
 
 ### [BUG 5] - Na opção de selecionar uma habilidade existem umas palavras que não são compatíveis com habilidades
   
-#### Funcionalidade: Cadastrar Habilidades
-#### Cenário: Cadastrar Habilidades
+#### Funcionalidade:
+Cadastrar Habilidades
+#### Cenário: 
+Cadastrar Habilidades
 
-###### BDD
+#### BDD
 1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 Q2. uando scroller na página curriculum para acessar o campo de Habilidades
 3. E selecionar uma  Habilidade
 4. E verificar quais habilidade estão no sistema
 
 
-##### Resultado Atual:  
+#### Resultado Atual:  
 Nas opções de selecionar uma habilidade existem palavras que não são compatíveis com habilidades, conforme os exemplos abaixo:
 +++++++
 teste de habilidade
 teste Jack
 ![Bug 5](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%205%5D.png)
 
-##### Resultado Esperado: Nas opções de selecionar uma habilidade constar apenas habilidades.
+#### Resultado Esperado: Nas opções de selecionar uma habilidade constar apenas habilidades.
 
 
 ### [Bug 6] - Quando está na tela de cadastro do currículo e observar a página o Olá está atrás do nome abreviado. 
 
 #### Funcionalidade: 
 Cadastre - se em nosso banco de talentos
-##### Cenário: 
+#### Cenário: 
 Um novo usuário irá cadastrar seu currículo na base de talentos
 
+#### BDD
 1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 2. E observar a página 
 
-# Resultado Atual:
+#### Resultado Atual:
 Quando está na tela de cadastro do currículo e observar a página o Olá está atrás do nome abreviado. 
 ![Bug 6](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%206%5D.png)
 
-# Resultado Esperado:
+#### Resultado Esperado:
 O Olá visível para o usuário 
 
 ### [Bug 7] - 
@@ -159,9 +167,9 @@ O atributo global id define um identificador exclusivo (ID) que deve ser único 
 Erro de estrutura do projeto quando se tem uma lista selecionável e uma boa prática utilizar a TAG SELECT do HTML assim ficará mais fácil fazer os testes automatizados em cima da tag utilizando o Selenium.
 ![Bug 8](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%208%5D.png)
 
-# Melhorias Encontradas
+## Melhorias Encontradas
 
-### [Melhorias 01] - Colocar uma Margem na box da Nayara Corporation para separar o conteúdo da box das Vagas
+#### [Melhorias 01] - Colocar uma Margem na box da Nayara Corporation para separar o conteúdo da box das Vagas
 
 #### Funcionalidade: Home Page
 
@@ -173,9 +181,10 @@ Então a box das vagas abertas está grudado com a box da Nayara Corporation
 Colocar uma Margem na box da Nayara Corporation para separar o conteúdo da box das Vagas
 ![Melhoria 1](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BMelhoria%2001%5D.png)
 
-### [Melhorias 02] - Melhorar a frase abaixo, apresentando quais campos obrigatórios que não foram preenchidos. “Atenção Existem campos obrigatórios que não foram preenchidos”
+## [Melhorias 02] - Melhorar a frase abaixo, apresentando quais campos obrigatórios que não foram preenchidos. “Atenção Existem campos obrigatórios que não foram preenchidos”
 
-#### Funcionalidade: Cadastrar currículo
+#### Funcionalidade: 
+Cadastrar currículo
 
 Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
 Quando preencher o telefone 
@@ -190,13 +199,13 @@ E clicar no botão Salvar dados e ir para próxima etapa
 Então o sistema mostra a frase de atenção
 
 
-### Resultado Esperado:
+#### Resultado Esperado:
 Melhorar a frase abaixo, apresentando quais campos obrigatórios que não foram preenchidos. “Atenção Existem campos obrigatórios que não foram preenchidos”
 
 
 ### [Melhorias 03] - Melhoria de usabilidade do sistema, colocar um asterisco vermelho (*) para preencher os campos obrigatórios
 
-##### Funcionalidade: 
+#### Funcionalidade: 
 Cadastrar currículo
 
 1. Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
