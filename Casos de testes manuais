@@ -1,0 +1,152 @@
+ Casos de Testes
+
+[CT01] - Cadastre - se em nosso banco de talentos sem Linkedin
+
+Funcionalidade: Cadastre - se em nosso banco de talentos sem Linkedin
+Cenário: Um novo usuário irá cadastrar seu currículo na base de talentos
+
+Pré condições: N/A
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/
+Quando clicar no botão Cadastre - se em nosso banco de talentos
+E clicar no link Registre-se
+Então o sistema vai para a página de registros 
+
+[CT02] - Cadastre - se em nosso banco de talentos com Linkedin
+
+Funcionalidade: Cadastre - se em nosso banco de talentos com Linkedin
+Cenário: Um novo usuário irá cadastrar seu currículo na base de talentos
+
+Pré condições: Ter conta no Linkedin
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/
+Quando clicar no botão Cadastre - se em nosso banco de talentos
+E clicar em Logar com o Linkedin 
+Então o sistema vai apresentar a tela do Linkedin para realizar o Login
+E preencher o Email/Telefone
+E preencher a senha
+E clicar em Entrar
+Então o sistema logar com sucesso 
+
+[CT03] - Cadastrar Currículo
+
+Funcionalidade: Cadastrar Currículo
+Cenário: Cadastrar um novo/editar currículo 
+
+Pré condições: Ter logado no sistema
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+Quando preencher o telefone 
+E selecionar Sim no radio button caso o número do telefone for o mesmo do WhatsApp 
+Quando o número do telefone for diferente do WhatsApp selecionar  Não no radio button
+E  preencher o numero do WhatsApp
+E  preencher o Email
+E preencher o Email novamente
+E preencher o Nome completo
+E selecionar o Gênero
+E preencher o Nascimento
+E selecionar o Status civil
+E selecionar a Senioridade
+E preencher a Pretensão salarial
+E scroller a página até o Endereço
+E selecionar o País
+E preencher o Cep
+E preencher o Logradouro
+E preencher o Número
+E preencher o Complemento
+E preencher o Bairro	
+E preencher o Estado
+E preencher o Cidade
+E scroller a página até o Documentos
+E preencher o CPF
+Então clica no botão Salvar dados e ir para próxima etapa
+
+[CT04] - Cadastrar Formação
+
+Funcionalidade: Cadastrar Formação
+Cenário: Adicionar uma ou mais formações
+Pré condições: 
+Ter logado no sistema
+Ter executado o Caso de Teste 3 (CT03)
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+Quando scroller na página curriculum para acessar o campo de Formação 
+E preencher  o Curso 
+E  preencher a Instituição
+E  selecionar o Nível escolar
+Quando estiver cursando ou finalizado selecionar no De o mês que começou o curso 
+E selecionar o ano 
+E selecionar o Estou cursando no momento 
+Quando finalizou o curso selecionar no Comi o Mês
+E selecionar o Ano de término
+E preencher a Descrição
+Então clica no botão Salvar dados e ir para próxima etapa
+
+[CT05] - Cadastrar Experiência
+
+Funcionalidade: Cadastrar Experiência
+Cenário: Cadastrar  uma ou mais experiência 
+
+Pré condições: 
+Ter logado no sistema
+Ter executado o Caso de Teste 3 (CT03)
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+Quando scroller na página curriculum para acessar o campo de Experiência
+
+E  preencher o Cargo
+E  preencher o Empresa
+Quando estiver empregado ou desempregado selecionar no De o mês que começou no emprego
+E selecionar o ano 
+E selecionar o Estou é meu cargo atual 
+Quando estiver desempregado selecionar no Comi o Mês
+E selecionar o Ano que finalizou o contrato
+E preencher a Descrição
+Então clica no botão Salvar dados e ir para próxima etapa
+
+[CT06] - Cadastrar Idiomas
+
+Funcionalidade: Cadastrar Idiomas
+Cenário: Cadastrar  uma ou mais idiomas
+
+
+Pré condições: 
+Ter logado no sistema
+Ter executado o Caso de Teste 3 (CT03)
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+Quando scroller na página curriculum para acessar o campo de Idiomas
+E selecionar um  Idioma 
+E selecionar o Nível
+Então clica no botão Salvar dados e ir para próxima etapa
+
+[CT07] - Cadastrar Habilidades
+
+Funcionalidade: Cadastrar Habilidades
+Cenário: Cadastrar uma ou mais habilidades
+
+Pré condições: 
+Ter logado no sistema
+Ter executado o Caso de Teste 3 (CT03)
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+Quando scroller na página curriculum para acessar o campo de Habilidades
+E selecionar uma  Habilidade
+E selecionar o Nível
+Então clica no botão Salvar dados e ir para próxima etapa
+
+[CT08] - Marcar os Objetivos que melhor te representa 
+
+Funcionalidade: Cadastrar Habilidades
+Cenário: Cadastrar uma ou mais habilidades
+
+Pré condições: 
+Ter logado no sistema
+Ter executado o Caso de Teste 3 (CT03)
+
+Dado ao acessar o site https://nayaracorporation.solides.jobs/curriculum
+Quando acessar a guia de Questionário comportamental
+E selecionar seis ou mais comportamentos
+E clicar em Salvar e ir para próxima
+E selecionar seis ou mais comportamentos que os outros pensam de você
+Então clica no botão Salvar dados e finalizar
