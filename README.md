@@ -1,5 +1,5 @@
 ## Bugs Encontrados
-Segue abaixo os bugs encontrados nos testes manuais e testes automatizados, qual quer duvida estou a disposição.
+Segue abaixo os bugs encontrados nos testes manuais e [testes automatizados](https://github.com/Fernandatrindade/testeAutomatizadoTalentos) (clique no nome para ir ao projeto de testes automatizado), qual quer duvida estou a disposição.
 
 
 ### [Bug 01] - Quando está na tela de cadastro do currículo e clica no botão  Cadastre - se em nosso banco de talentos e apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
