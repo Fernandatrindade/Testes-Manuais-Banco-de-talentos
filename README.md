@@ -1,4 +1,5 @@
 ## Bugs Encontrados
+Segue abaixo os bugs encontrados nos testes manuais e testes automatizados, qual quer duvida estou a disposição.
 
 
 ### [Bug 01] - Quando está na tela de cadastro do currículo e clica no botão  Cadastre - se em nosso banco de talentos e apresenta a mensagem “ Sucesso Aplicação realizada com sucesso no banco de talentos.”
@@ -155,7 +156,7 @@ Quando está na tela de cadastro do currículo e observar a página o Olá está
 #### Resultado Esperado:
 O Olá visível para o usuário 
 
-### [Bug 7] - 
+### [Bug 7] - Estrutural
 Erro de estrutura do projeto, foi utilizado o mesmo ID para várias TAGS e conforme a descrição abaixo, o ID e para ser utilizado apenas em uma TAG ou seja o ID e um elemento único, sendo de uso exclusivo da mesmo:
 
 O atributo global id define um identificador exclusivo (ID) que deve ser único por todo o documento. Seu objetivo é identificar o elemento ao navegar por âncoras (usando um identificador de fragmento), quando utilizar scripts ou estilizando (com CSS). Caso precise dar o mesmo nome para uma estrutura de TAGS é recomendado utilizar o name ou o class.
@@ -163,9 +164,16 @@ O atributo global id define um identificador exclusivo (ID) que deve ser único 
 ![Bug 7]https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%207%5D.png)
 
 
-### [Bug 8] - 
+### [Bug 8] - Estrutural
 Erro de estrutura do projeto quando se tem uma lista selecionável e uma boa prática utilizar a TAG SELECT do HTML assim ficará mais fácil fazer os testes automatizados em cima da tag utilizando o Selenium.
 ![Bug 8](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%208%5D.png)
+
+### Atomação de Teste 
+1. Erro ao selecionar uma lista de valores exemplo: Genero, Estado civil etc. No Selenium existe a possibilidade de selecionar uma lista que está dentro de uma tag do tipo Select do HTML porém no projeto não tem essa tag ai o Selenium não consegue selecionar um valor.
+![Bug Auto1](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%208%5D.png)
+
+2. O chat bot da Sólides Jobs esta na frente do botão  Salvar dados e ir para próxima etapa, por tanto imposibilitando o teste automatizado clicar no botão, foi feito uma tentantiva de clicar no botão fechar do chat bot porém o mesmo não fechar.
+![Bug Auto2](https://github.com/Fernandatrindade/Testes-Manuais-Banco-de-talentos/blob/main/%5BBug%20Auto2%5D.png)
 
 ## Melhorias Encontradas
 
@@ -234,4 +242,6 @@ Cadastrar currículo
 
 #### Resultado Esperado:
 Colocar uma frase de salve com sucesso, no cadastro e na edição do currículo.
+
+### [Melhorias 05] - Melhoria se possivel na estrutura HTML do projeto para ficar mais facil nos testes automatizados. 
 
